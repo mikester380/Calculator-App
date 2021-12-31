@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/light-theme.css" class="color-scheme">
+</head>
+<body>
+  <div class="app">
+  <header class="header">
+    <h1 class="header__logo">calc</h1>
+    <div class="header__theme">
+      <p class="header__theme-toggle-level">
+        <span>1</span><span>2</span><span>3</span>
+      </p>
+      <div class="header__theme-toggle-wrapper">
+        <p class="header__theme-toggle-heading">
+          theme
+        </p>
+        <div class="header__theme-toggle">
+          <div class="header__theme-toggle-circle"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="calculator">
+    <section class="calculator__view">
+      <p class="calculator__view-digit">0</p>
+    </section>
+
+    <section class="calculator__buttons">
+      <button class="calculator__button">7</button>
+      <button class="calculator__button">8</button>
+      <button class="calculator__button">9</button>
+      <button class="calculator__button delete">DEL</button>
+      <button class="calculator__button">4</button>
+      <button class="calculator__button">5</button>
+      <button class="calculator__button">6</button>
+      <button class="calculator__button operator">+</button>
+      <button class="calculator__button">1</button>
+      <button class="calculator__button">2</button>
+      <button class="calculator__button">3</button>
+      <button class="calculator__button operator">-</button>
+      <button class="calculator__button">.</button>
+      <button class="calculator__button">0</button>
+      <button class="calculator__button operator">/</button>
+      <button class="calculator__button operator">x</button>
+      <button class="calculator__button reset">RESET</button>
+      <button class="calculator__button equal">=</button>
+    </section>
+  </main>
+
+</div>
+  <!--<div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.-->
+ 
+<script src="js/script.js"></script>
+<script src="js/theme-switcher.js"></script>
+</div>
+</body>
+</html>

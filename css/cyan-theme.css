@@ -1,0 +1,64 @@
+:root{
+ --very-dark-violet /*main background*/: hsl(268, 75%, 9%);
+ --very-dark-violet2 /*toggle background, keypad background, screen background */: hsl(268, 71%, 12%);
+
+ --dark-violet /*key background*/: hsl(281, 89%, 26%);
+ --vivid-magenta /*key shadow*/: hsl(285, 91%, 52%);
+
+ --pure-cyan /*key background, toggle*/: hsl(176, 100%, 44%);
+ --soft-cyan /*key shadow*/: hsl(177, 92%, 70%);
+
+ --very-dark-violet3 /*key background*/: hsl(268, 47%, 21%);
+ --dark-magenta /*key shadow*/: hsl(290, 70%, 36%);
+
+ --light-yellow: hsl(52, 100%, 62%);
+ --very-dark-blue: hsl(198, 20%, 13%);
+ --white /*text*/ : #fff;
+}
+
+body{
+  background: var(--very-dark-violet);
+}
+
+.header{
+  color: var(--white);
+}
+
+.header__theme-toggle{
+  background: var(--very-dark-violet2);
+}
+
+.header__theme-toggle-circle{
+  background: var(--pure-cyan);
+}
+
+.calculator__view{
+  background: var(--very-dark-violet2);
+}
+
+.calculator__view-digit{
+  color: var(--light-yellow);
+}
+
+.calculator__buttons{
+  background: var(--very-dark-violet2);
+}
+
+.calculator__button{
+  font-weight: 700;
+  color: var(--light-yellow);
+  background: var(--very-dark-violet3);
+  border-bottom-color: var(--dark-magenta);
+}
+
+.reset, .delete{
+  background: var(--dark-violet);
+  color: var(--white);
+  border-bottom-color: var(--vivid-magenta);
+}
+
+.equal{
+  background: var(--pure-cyan);
+  color: var(--very-dark-blue);
+  border-bottom-color: var(--soft-cyan);
+}

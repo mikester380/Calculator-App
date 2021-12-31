@@ -1,0 +1,69 @@
+:root{
+  /*BACKGROUNDS*/
+ --very-dark-desaturated-blue1 /*main bg*/ : hsl(222, 26%, 31%);
+ --very-dark-desaturated-blue2 /*toggle background, keypad background */ : hsl(223, 31%, 20%);
+ --very-dark-desaturated-blue3 /*screen background*/: hsl(224, 36%, 15%);
+
+ /*KEYS*/
+
+ --desaturated-dark-blue4 /*key background*/: hsl(225, 21%, 49%);
+ --desaturated-dark-blue5 /*key shadow*/: hsl(224, 28%, 35%);
+
+ --red /*red background, toggle*/: hsl(6, 63%, 50%);
+ --dark-red /*key shadow*/: hsl(6, 70%, 34%);
+
+ --light-grayish-orange1 /*key background*/: hsl(30, 25%, 89%);
+ --light-grayish-orange2 /*key shadow*/: hsl(28, 16%, 65%);
+
+ /*TEXT*/
+
+ --very-dark-grayish-blue: hsl(221, 14%, 31%);
+ --white: #fff;
+}
+
+body{
+  background: var(--very-dark-desaturated-blue1);
+}
+
+.header{
+  color: var(--white);
+}
+
+.header__theme-toggle{
+  background: var(--very-dark-desaturated-blue2);
+}
+
+.header__theme-toggle-circle{
+  background: var(--red);
+}
+
+.calculator__view{
+  background: var(--very-dark-desaturated-blue3);
+}
+
+.calculator__view-digit{
+  color: var(--white);
+}
+
+.calculator__buttons{
+  background: var(--very-dark-desaturated-blue2);
+}
+
+.calculator__button{
+  font-weight: 700;
+  color: var(-very-dark-grayish-blue);
+  background: var(--light-grayish-orange1);
+  border-bottom-color: var(--light-grayish-orange2);
+}
+
+.reset, .delete{
+  background: var(--desaturated-dark-blue4);
+  color: var(--white);
+  border-bottom-color: var(--desaturated-dark-blue5);
+}
+
+.equal{
+  background: var(--red);
+  color: var(--white);
+  border-bottom-color: var(--dark-red);
+}

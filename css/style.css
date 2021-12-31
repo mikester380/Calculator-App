@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Spartan", Sans-Serif;
+  padding: 1.9rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  max-width: 500px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.header__theme {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.header__theme-toggle-level {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding-right: 0.63rem;
+  margin-bottom: 0.3rem;
+}
+
+.header__theme-toggle-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header__theme-toggle-heading {
+  text-transform: uppercase;
+  margin-right: 1.9rem;
+}
+
+.header__theme-toggle {
+  width: 5rem;
+  height: 1.9rem;
+  border-radius: 0.9rem;
+  padding: 0.3rem;
+  position: relative;
+}
+
+.header__theme-toggle-circle {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  background: red;
+  position: absolute;
+  transition: all 0.5s;
+}
+
+.calculator__view {
+  height: 5rem;
+  border-radius: 0.8rem;
+  margin-bottom: 1.9rem;
+  display: flex;
+  align-items: center;
+  padding-right: 1.25rem;
+  overflow-x: hidden;
+}
+
+.calculator__view-digit {
+  flex: 1;
+  text-align: right;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.calculator__buttons {
+  display: grid;
+  grid-template: repeat(5, 70px) / repeat(4, minmax(65px, 100px));
+  gap: 1rem;
+  justify-content: center;
+  padding: 1.9rem;
+  border-radius: 0.63rem;
+}
+
+.calculator__button {
+  font-family: "Spartan", Sans-Serif;
+  font-size: 1.5rem;
+  border: none;
+  border-bottom: 4px solid;
+  border-radius: 0.4rem;
+}
+
+.reset,
+.equal {
+  grid-area: auto / span 2;
+}
+
+.light-circle-transition {
+  left: 0.3rem;
+}
+
+.dark-circle-transition {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cyan-circle-transition {
+  transform: translate(0);
+  right: 0.3rem;
+}
